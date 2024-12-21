@@ -34,16 +34,6 @@ export default {
     }
     this.muestra = !this.muestra;
   }
-  },
-  data() {
-    return {
-      muestra:true,
-      muestra1: true,
-      muestra2: true,
-
-    };
-  },
-};
 </script>
 
 <style>
