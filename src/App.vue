@@ -1,39 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Contador 
-  encabezado="ContAdor Primero" 
-  :valor="calcular(1, 2)" 
-  :esVerdad="muestra1" 
-  :valor2="70" />
-
-  <Contador 
-  encabezado=" Segundo" 
-  :valor="calcular(5, 4)" 
-  :esVerdad="muestra2"/>
-
-  <button @:click="cambiar(1)">Cambiar Primero</button>
-  <button @:click="cambiar(2)">Cambiar Segundo</button>
+  <JuegoPages/>
 </template>
 
 <script>
-import Contador from './components/Contador.vue'
+import JuegoPages from './pages/JuegoPages.vue'
 export default {
   name: 'App',
   components: {
-    Contador
+    JuegoPages
   },
-  methods: {
-    calcular(a, b) {
-      return a + b;
-    },
-    cambiar(valor) {
-      if(valor===1){
-        this.muestra1 = !this.muestra1;
-      }else{
-        this.muestra2 = !this.muestra2;
-    }
-    this.muestra = !this.muestra;
-  }
+};
 </script>
 
 <style>
@@ -44,5 +20,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} 
 </style>
